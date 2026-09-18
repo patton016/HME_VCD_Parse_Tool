@@ -1,0 +1,10 @@
+assign debug_data = {
+	data_fwd_word_addr[29:0],data_fwd_data[31:0],data_fwd_hit_current,data_fwd_valid,
+	data_we_b[3:0],data_r_a[31:0],data_w_b[31:0],data_addr_b[9:0],
+	state[3:0],accept_cpu_req,cpu_access_valid,hit,wb_addr_cnt[2:0],refill_cnt[2:0],miss_write_reg,
+	cpu_haddr[31:0],cpu_hrdata[31:0],cpu_hwrite,cpu_hsel,cpu_htrans[1:0],cpu_hready_out,
+	cpu_addr_reg[31:0],cpu_hwrite_reg,cpu_hsize_reg[1:0],cpu_hwdata_reg[31:0],
+	mem_haddr[31:0],mem_hrdata[31:0],mem_hwrite,mem_hready,
+	tag_lookup_data[21:0],tag_cmp[19:0],victim_tag_reg[19:0]
+};
+
